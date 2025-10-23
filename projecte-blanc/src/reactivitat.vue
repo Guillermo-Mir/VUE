@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 //definim variable reactiva
-const contador = ref(0) //reactivitat cualquier cosa que modifique lo que se ve por pantalla
+const contador = ref(0) //reactivitat (ref()) cualquier cosa que modifique lo que se ve por pantalla
 //Funció que modifica el valor
 const incrementar = () => {
   contador.value++

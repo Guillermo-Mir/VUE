@@ -1,27 +1,38 @@
 <script setup>
 import { ref } from "vue";
-//definim variable reactiva
-const contador = ref(0) //reactivitat (ref()) cualquier cosa que modifique lo que se ve por pantalla (renderizar)
-//Funció que modifica el valor
+
+// Variable reactiva inicializada en 0
+const contador = ref(0)
+
+// Función que suma 1 a contador
 const incrementar = () => {
-  contador.value++
+  contador.value++ // usamos .value para modificar refs
 }
 
+// Mensaje reactivo
 const missatge = ref('hola, món')
+
+// Función para cambiar el mensaje
 const canviarMissatge = () => {
   missatge.value = 'Hola, Vue'
- }
-
+}
 </script>
 
 <template>
   <div>
+    <!-- Mostramos el contador -->
     <p>El comptaor és: {{contador}}</p>
+    
+    <!-- Al hacer click ejecutamos la función -->
     <button @click="incrementar">Incrementar</button>
   </div>  
+
   <div>
-    <h1> {{missatge}}</h1>
-    <button @click="canviarMissatge">Canvia el missatge</button> 
+    <!-- Mostramos el mensaje -->
+    <h1>{{missatge}}</h1>
+
+    <!-- Cambia el mensaje al hacer click -->
+    <button @click="canviarMissatge">Canvia el missatge</button>
   </div>
 </template>
 

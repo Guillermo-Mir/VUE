@@ -1,6 +1,8 @@
 <script setup>
 import Tea from './components/Tea.vue';
 
+const teas = ["Verds", "Negres", "Vermells", "Blancs"];
+
 
 </script>
 <template>
@@ -10,10 +12,7 @@ import Tea from './components/Tea.vue';
             Disposem dels millor tes del món
         </h2>
         <div class="plans">
-            <Tea name="Verds"/>
-            <Tea name="Negres"/>
-            <Tea name="Vermells"/>
-            <Tea name="Blancs"/>
-       </div>
+            <Tea v-for="tea in teas" :key="tea" name="tea"/>    
+        </div>
     </div> 
 </template>

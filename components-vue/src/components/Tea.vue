@@ -1,7 +1,11 @@
 <script setup>
+import AppTea from '@/AppTea.vue';
+import { ref } from 'vue';
+
 defineProps({
     name:String /*recoge la propiedades para vincular el dom con los datos*/
 });
+
 </script>
 
 <template>

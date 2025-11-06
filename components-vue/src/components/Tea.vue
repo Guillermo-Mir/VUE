@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-    name:String
+    name:String /*recoge la propiedades para vincular el dom con los datos*/
 });
 </script>
 

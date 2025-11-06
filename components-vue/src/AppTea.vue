@@ -12,7 +12,7 @@ const teas = ["Verds", "Negres", "Vermells", "Blancs"];
             Disposem dels millor tes del món
         </h2>
         <div class="plans">
-            <Tea v-for="tea in teas" :key="tea" name="tea"/>    
+            <Tea v-for="tea in teas" :key="tea" :name= "tea"/>    
         </div>
     </div> 
 </template>

@@ -20,7 +20,7 @@ const framework = frameworks.find(f => f.id == frameworkID)
     -->
     <h1>Framework Detail</h1>
     <div>
-        <h2>Nom - {{framework.name}}</h2>
+        <h2>{{framework.name}}</h2>
         <p><b>Descripcio - </b>{{framework.desc}}</p>
     </div>
 

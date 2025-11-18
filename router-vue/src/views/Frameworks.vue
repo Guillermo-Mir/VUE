@@ -21,6 +21,12 @@ import { ref } from 'vue';
             <RouterLink :to="`/frameworks/${frame.id}`"> {{ frame.name }}</RouterLink>
         </li>
     </ul>
-    <RouterView :key="$route.fullPath" />
+    <!--Solucion1-->
+    <!--RouterView :key="$route.fullPath" /-->
+    
+    <!--Solucion2-->
+    <RouterView/>
+
+
     
 </template>

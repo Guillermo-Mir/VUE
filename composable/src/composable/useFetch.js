@@ -27,8 +27,8 @@ export function useFetch(url){
         }
     }
 
-    onMounted(fetchData) //fa la execució de la funció
+   onMounted(fetchData) //fa la execució de la funció
 
-   return  {data, error, loading, fetchData}
+   return  {data, error, loading, fetchData} //si quitas el fetchData sigue funcionando
 }
 

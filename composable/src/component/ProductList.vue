@@ -20,7 +20,7 @@ const {data, error, loading, fetchData} = useFetch(url);
     <div v-else>
     <ProductItem v-for="p in data.products" :key="p.id" 
                 :title="p.title" 
-                :description="p.decroption"
+                :description="p.description"
                 :price="p.price"
                 :thumbnail="p.thumbnail"/>
     </div>

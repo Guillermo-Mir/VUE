@@ -19,7 +19,7 @@ const props = defineProps({
     <img :src="thumbnail" :alt="title">
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
-    <p>{{ price }}</p>
+    <p>{{ price }}€</p>
 </div>
 
 </template>
